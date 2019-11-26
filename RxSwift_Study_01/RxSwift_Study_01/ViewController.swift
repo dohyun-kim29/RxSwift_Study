@@ -11,6 +11,7 @@ import RxCocoa
 import RxSwift
 
 class ViewController: UIViewController {
+    
     var disposeBag = DisposeBag()
     
     @IBOutlet weak var idField: UITextField!
@@ -21,11 +22,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginButtonTextChanger()
         bindUI()
         // Do any additional setup after loading the view.
     }
 
-    private func bindUI() {
+    func loginButtonTextChanger() {
+        if loginButton.isEnabled {
+            loginButton.titleLabel?.text = "Not Vaild"
+        }
+    }
+    
+    func bindUI() {
         
         (idField.rx.text.orEmpty.map(checkEmailValid1(_:)),
             idField.rx.text.orEmpty.map(checkEmailVaild2(_:)),
@@ -55,19 +63,20 @@ class ViewController: UIViewController {
         
     )}
     
-    private func checkEmailValid1(_ email: String) -> Bool {
+    func checkEmailValid1(_ email: String) -> Bool {
         return email.contains("@")
     }
 
-    private func checkEmailVaild2(_ email: String) -> Bool {
+    func checkEmailVaild2(_ email: String) -> Bool {
         return email.contains(".com") ||
         email.contains(".net")
     }
-    private func checkPasswordValid1(_ password: String) -> Bool {
+    
+    func checkPasswordValid1(_ password: String) -> Bool {
         return password.count > 5
     }
     
-    private func checkPasswordVaild2(_ password: String) -> Bool {
+    func checkPasswordVaild2(_ password: String) -> Bool {
         return password.contains("!") ||
             password.contains("@") ||
             password.contains("#") ||
@@ -77,7 +86,7 @@ class ViewController: UIViewController {
             password.contains("&")
     }
     
-    private func checkPasswordVaild3(_ password: String) -> Bool {
+    func checkPasswordVaild3(_ password: String) -> Bool {
         return password.contains("1") ||
         password.contains("2") ||
         password.contains("3") ||
