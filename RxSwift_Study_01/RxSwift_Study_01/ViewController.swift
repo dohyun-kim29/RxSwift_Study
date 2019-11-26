@@ -27,25 +27,66 @@ class ViewController: UIViewController {
 
     private func bindUI() {
         
-        (idField.rx.text.orEmpty
-            .map(checkEmailValid(_:))
-            .subscribe(onNext: {b in self.idVaildView.isHidden = b}) as AnyObject)
+        (idField.rx.text.orEmpty.map(checkEmailValid1(_:)),
+            idField.rx.text.orEmpty.map(checkEmailVaild2(_:)),
+            .subscribe(onNext: {b in self.idVaildView.isHidden = b})
+            .disposed(by: disposeBag),
     
         
-        (pwField.rx.text.orEmpty
-            .map(checkPasswordValid(_:))
-            .subscribe(onNext: {b in self.pwVaildView.isHidden = b}) as AnyObject)
+        (pwField.rx.text.orEmpty.map(checkPasswordValid1(_:)),
+            pwField.rx.text.orEmpty.map(checkPasswordVaild2(_:)),
+            pwField.rx.text.orEmpty.map(checkPasswordVaild3(_:)),
+            .subscribe(onNext: {b in self.pwVaildView.isHidden = b})
+            .disposed(by: disposeBag),
+           
         
-    }
+        Observable.combineLatest(
+            idField.rx.text.orEmpty.map(checkEmailValid1),
+            idField.rx.text.orEmpty.map(checkPasswordVaild2),
+            pwField.rx.text.orEmpty.map(checkPasswordValid1),
+            pwField.rx.text.orEmpty.map(checkPasswordVaild2),
+            pwField.rx.text.orEmpty.map(checkPasswordVaild3),
+            resultSelector: {s1, s2, s3, s4, s5  in s1 && s2}
+        )
+        
+            .subscribe(onNext: {b in self.loginButton.isEnabled = b})
+        .disposed(by: disposeBag)
+        )
+        
+    )}
     
-    private func checkEmailValid(_ email: String) -> Bool {
-        return email.contains("@") && email.contains(".")
+    private func checkEmailValid1(_ email: String) -> Bool {
+        return email.contains("@")
     }
 
-    private func checkPasswordValid(_ password: String) -> Bool {
-        return password.count > 5 && password.contains("!") || password.contains("@") ||
-        password.contains("#") ||
-        password.contains("$")
+    private func checkEmailVaild2(_ email: String) -> Bool {
+        return email.contains(".com") ||
+        email.contains(".net")
     }
+    private func checkPasswordValid1(_ password: String) -> Bool {
+        return password.count > 5
+    }
+    
+    private func checkPasswordVaild2(_ password: String) -> Bool {
+        return password.contains("!") ||
+            password.contains("@") ||
+            password.contains("#") ||
+            password.contains("*") ||
+            password.contains("$") ||
+            password.contains("%") ||
+            password.contains("&")
+    }
+    
+    private func checkPasswordVaild3(_ password: String) -> Bool {
+        return password.contains("1") ||
+        password.contains("2") ||
+        password.contains("3") ||
+        password.contains("4") ||
+        password.contains("5") ||
+        password.contains("6") ||
+        password.contains("7") ||
+        password.contains("8") ||
+        password.contains("9")
+    }
+    
 }
-
