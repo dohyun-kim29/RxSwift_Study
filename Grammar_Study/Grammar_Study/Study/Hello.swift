@@ -12,7 +12,7 @@ import RxCocoa
 
 let disposeBag = DisposeBag()
 
-Observable.just("Hello, RxSwift")
+Observable.just("Hello, RxSwift") 
     .subscribe{ print($0) }
     .disposed(by: disposeBag)
 
