@@ -11,3 +11,18 @@ import RxSwift
 
 
 let element = "😀"
+
+func just1() {
+    
+    Observable.just(element)
+        .subscribe { event in print(event) }
+        .disposed(by: disposeBag)
+}
+
+func just2() {
+    Observable.just([1, 2, 3])
+        .subscribe { event in print(event) }
+        .disposed(by: disposeBag)
+}
+
+
