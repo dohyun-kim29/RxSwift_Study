@@ -4,7 +4,8 @@
 target 'Grammar_Study' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'RxSwift'
-  # Pods for Grammar_Study
 
+  # Pods for Grammar_Study
+pod 'RxSwift'
+pod 'RxCocoa'
 end

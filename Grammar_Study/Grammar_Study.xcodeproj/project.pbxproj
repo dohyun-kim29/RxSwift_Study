@@ -3,86 +3,101 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4741E04424BC4B09006A66D2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741E04324BC4B09006A66D2 /* main.swift */; };
-		F903198930180CCDD6D8ECD9 /* Pods_Grammar_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C0D98EC88D13C6CA410A04 /* Pods_Grammar_Study.framework */; };
+		3B4B3E554E23E407493B99A4 /* Pods_Grammar_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1475433AFCAC8F507BBA47B1 /* Pods_Grammar_Study.framework */; };
+		472107D324BC6A8F0066E1F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472107D224BC6A8F0066E1F0 /* AppDelegate.swift */; };
+		472107D524BC6A8F0066E1F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472107D424BC6A8F0066E1F0 /* SceneDelegate.swift */; };
+		472107D724BC6A8F0066E1F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472107D624BC6A8F0066E1F0 /* ViewController.swift */; };
+		472107DA24BC6A8F0066E1F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472107D824BC6A8F0066E1F0 /* Main.storyboard */; };
+		472107DC24BC6A8F0066E1F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472107DB24BC6A8F0066E1F0 /* Assets.xcassets */; };
+		472107DF24BC6A8F0066E1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472107DD24BC6A8F0066E1F0 /* LaunchScreen.storyboard */; };
+		472107E824BC6B270066E1F0 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472107E724BC6B270066E1F0 /* Hello.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		4741E03E24BC4B09006A66D2 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		31FF6771C6230F828A2FE56D /* Pods-Grammar_Study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grammar_Study.release.xcconfig"; path = "Target Support Files/Pods-Grammar_Study/Pods-Grammar_Study.release.xcconfig"; sourceTree = "<group>"; };
-		4741E04024BC4B09006A66D2 /* Grammar_Study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Grammar_Study; sourceTree = BUILT_PRODUCTS_DIR; };
-		4741E04324BC4B09006A66D2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		D0B0321EFEF2B0D9E0DCE5FD /* Pods-Grammar_Study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grammar_Study.debug.xcconfig"; path = "Target Support Files/Pods-Grammar_Study/Pods-Grammar_Study.debug.xcconfig"; sourceTree = "<group>"; };
-		E8C0D98EC88D13C6CA410A04 /* Pods_Grammar_Study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grammar_Study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1475433AFCAC8F507BBA47B1 /* Pods_Grammar_Study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grammar_Study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		472107CF24BC6A8F0066E1F0 /* Grammar_Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grammar_Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		472107D224BC6A8F0066E1F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		472107D424BC6A8F0066E1F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		472107D624BC6A8F0066E1F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		472107D924BC6A8F0066E1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		472107DB24BC6A8F0066E1F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		472107DE24BC6A8F0066E1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		472107E024BC6A8F0066E1F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		472107E724BC6B270066E1F0 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
+		5681C3DC1F6C20D96F1637F1 /* Pods-Grammar_Study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grammar_Study.release.xcconfig"; path = "Target Support Files/Pods-Grammar_Study/Pods-Grammar_Study.release.xcconfig"; sourceTree = "<group>"; };
+		AE3C82FC50DA600AA36E0E4C /* Pods-Grammar_Study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grammar_Study.debug.xcconfig"; path = "Target Support Files/Pods-Grammar_Study/Pods-Grammar_Study.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4741E03D24BC4B09006A66D2 /* Frameworks */ = {
+		472107CC24BC6A8E0066E1F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F903198930180CCDD6D8ECD9 /* Pods_Grammar_Study.framework in Frameworks */,
+				3B4B3E554E23E407493B99A4 /* Pods_Grammar_Study.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4741E03724BC4B09006A66D2 = {
+		472107C624BC6A8E0066E1F0 = {
 			isa = PBXGroup;
 			children = (
-				4741E04224BC4B09006A66D2 /* Grammar_Study */,
-				4741E04124BC4B09006A66D2 /* Products */,
-				5E98A955678254B78BE70805 /* Pods */,
-				FF5CF2221C9F41FE7E4E2ED7 /* Frameworks */,
+				472107D124BC6A8F0066E1F0 /* Grammar_Study */,
+				472107D024BC6A8F0066E1F0 /* Products */,
+				6DCB668C1C423324BCEBE3EE /* Pods */,
+				DAF9F140D9C0EE735917FD6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4741E04124BC4B09006A66D2 /* Products */ = {
+		472107D024BC6A8F0066E1F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4741E04024BC4B09006A66D2 /* Grammar_Study */,
+				472107CF24BC6A8F0066E1F0 /* Grammar_Study.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4741E04224BC4B09006A66D2 /* Grammar_Study */ = {
+		472107D124BC6A8F0066E1F0 /* Grammar_Study */ = {
 			isa = PBXGroup;
 			children = (
-				4741E04324BC4B09006A66D2 /* main.swift */,
+				472107E624BC6B130066E1F0 /* Study */,
+				472107D224BC6A8F0066E1F0 /* AppDelegate.swift */,
+				472107D424BC6A8F0066E1F0 /* SceneDelegate.swift */,
+				472107D624BC6A8F0066E1F0 /* ViewController.swift */,
+				472107D824BC6A8F0066E1F0 /* Main.storyboard */,
+				472107DB24BC6A8F0066E1F0 /* Assets.xcassets */,
+				472107DD24BC6A8F0066E1F0 /* LaunchScreen.storyboard */,
+				472107E024BC6A8F0066E1F0 /* Info.plist */,
 			);
 			path = Grammar_Study;
 			sourceTree = "<group>";
 		};
-		5E98A955678254B78BE70805 /* Pods */ = {
+		472107E624BC6B130066E1F0 /* Study */ = {
 			isa = PBXGroup;
 			children = (
-				D0B0321EFEF2B0D9E0DCE5FD /* Pods-Grammar_Study.debug.xcconfig */,
-				31FF6771C6230F828A2FE56D /* Pods-Grammar_Study.release.xcconfig */,
+				472107E724BC6B270066E1F0 /* Hello.swift */,
 			);
-			name = Pods;
+			path = Study;
+			sourceTree = "<group>";
+		};
+		6DCB668C1C423324BCEBE3EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE3C82FC50DA600AA36E0E4C /* Pods-Grammar_Study.debug.xcconfig */,
+				5681C3DC1F6C20D96F1637F1 /* Pods-Grammar_Study.release.xcconfig */,
+			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		FF5CF2221C9F41FE7E4E2ED7 /* Frameworks */ = {
+		DAF9F140D9C0EE735917FD6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E8C0D98EC88D13C6CA410A04 /* Pods_Grammar_Study.framework */,
+				1475433AFCAC8F507BBA47B1 /* Pods_Grammar_Study.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,14 +105,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4741E03F24BC4B09006A66D2 /* Grammar_Study */ = {
+		472107CE24BC6A8E0066E1F0 /* Grammar_Study */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4741E04724BC4B09006A66D2 /* Build configuration list for PBXNativeTarget "Grammar_Study" */;
+			buildConfigurationList = 472107E324BC6A8F0066E1F0 /* Build configuration list for PBXNativeTarget "Grammar_Study" */;
 			buildPhases = (
-				DF5968FE7C5FC0D116851923 /* [CP] Check Pods Manifest.lock */,
-				4741E03C24BC4B09006A66D2 /* Sources */,
-				4741E03D24BC4B09006A66D2 /* Frameworks */,
-				4741E03E24BC4B09006A66D2 /* CopyFiles */,
+				D86FBA128596313FADE058EA /* [CP] Check Pods Manifest.lock */,
+				472107CB24BC6A8E0066E1F0 /* Sources */,
+				472107CC24BC6A8E0066E1F0 /* Frameworks */,
+				472107CD24BC6A8E0066E1F0 /* Resources */,
+				19AF64910B68C22A09904443 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -105,25 +121,25 @@
 			);
 			name = Grammar_Study;
 			productName = Grammar_Study;
-			productReference = 4741E04024BC4B09006A66D2 /* Grammar_Study */;
-			productType = "com.apple.product-type.tool";
+			productReference = 472107CF24BC6A8F0066E1F0 /* Grammar_Study.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4741E03824BC4B09006A66D2 /* Project object */ = {
+		472107C724BC6A8E0066E1F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = DohyunKim;
 				TargetAttributes = {
-					4741E03F24BC4B09006A66D2 = {
+					472107CE24BC6A8E0066E1F0 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = 4741E03B24BC4B09006A66D2 /* Build configuration list for PBXProject "Grammar_Study" */;
+			buildConfigurationList = 472107CA24BC6A8E0066E1F0 /* Build configuration list for PBXProject "Grammar_Study" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,18 +147,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 4741E03724BC4B09006A66D2;
-			productRefGroup = 4741E04124BC4B09006A66D2 /* Products */;
+			mainGroup = 472107C624BC6A8E0066E1F0;
+			productRefGroup = 472107D024BC6A8F0066E1F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4741E03F24BC4B09006A66D2 /* Grammar_Study */,
+				472107CE24BC6A8E0066E1F0 /* Grammar_Study */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		472107CD24BC6A8E0066E1F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472107DF24BC6A8F0066E1F0 /* LaunchScreen.storyboard in Resources */,
+				472107DC24BC6A8F0066E1F0 /* Assets.xcassets in Resources */,
+				472107DA24BC6A8F0066E1F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
-		DF5968FE7C5FC0D116851923 /* [CP] Check Pods Manifest.lock */ = {
+		19AF64910B68C22A09904443 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grammar_Study/Pods-Grammar_Study-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grammar_Study/Pods-Grammar_Study-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Grammar_Study/Pods-Grammar_Study-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D86FBA128596313FADE058EA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -167,18 +213,40 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4741E03C24BC4B09006A66D2 /* Sources */ = {
+		472107CB24BC6A8E0066E1F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4741E04424BC4B09006A66D2 /* main.swift in Sources */,
+				472107D724BC6A8F0066E1F0 /* ViewController.swift in Sources */,
+				472107D324BC6A8F0066E1F0 /* AppDelegate.swift in Sources */,
+				472107E824BC6B270066E1F0 /* Hello.swift in Sources */,
+				472107D524BC6A8F0066E1F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		472107D824BC6A8F0066E1F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				472107D924BC6A8F0066E1F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		472107DD24BC6A8F0066E1F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				472107DE24BC6A8F0066E1F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		4741E04524BC4B09006A66D2 /* Debug */ = {
+		472107E124BC6A8F0066E1F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -228,17 +296,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		4741E04624BC4B09006A66D2 /* Release */ = {
+		472107E224BC6A8F0066E1F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,61 +350,76 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		4741E04824BC4B09006A66D2 /* Debug */ = {
+		472107E424BC6A8F0066E1F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0B0321EFEF2B0D9E0DCE5FD /* Pods-Grammar_Study.debug.xcconfig */;
+			baseConfigurationReference = AE3C82FC50DA600AA36E0E4C /* Pods-Grammar_Study.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VSX6758FTG;
-				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Grammar_Study/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DohyunKim.Grammar-Study";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4741E04924BC4B09006A66D2 /* Release */ = {
+		472107E524BC6A8F0066E1F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31FF6771C6230F828A2FE56D /* Pods-Grammar_Study.release.xcconfig */;
+			baseConfigurationReference = 5681C3DC1F6C20D96F1637F1 /* Pods-Grammar_Study.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VSX6758FTG;
-				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Grammar_Study/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DohyunKim.Grammar-Study";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4741E03B24BC4B09006A66D2 /* Build configuration list for PBXProject "Grammar_Study" */ = {
+		472107CA24BC6A8E0066E1F0 /* Build configuration list for PBXProject "Grammar_Study" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4741E04524BC4B09006A66D2 /* Debug */,
-				4741E04624BC4B09006A66D2 /* Release */,
+				472107E124BC6A8F0066E1F0 /* Debug */,
+				472107E224BC6A8F0066E1F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4741E04724BC4B09006A66D2 /* Build configuration list for PBXNativeTarget "Grammar_Study" */ = {
+		472107E324BC6A8F0066E1F0 /* Build configuration list for PBXNativeTarget "Grammar_Study" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4741E04824BC4B09006A66D2 /* Debug */,
-				4741E04924BC4B09006A66D2 /* Release */,
+				472107E424BC6A8F0066E1F0 /* Debug */,
+				472107E524BC6A8F0066E1F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4741E03824BC4B09006A66D2 /* Project object */;
+	rootObject = 472107C724BC6A8E0066E1F0 /* Project object */;
 }
