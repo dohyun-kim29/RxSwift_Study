@@ -8,7 +8,7 @@ target 'Rx_Memo' do
   # Pods for Rx_Memo
 pod 'RxSwift'
 pod 'RxCocoa'
-pod 'RxOptional'
-pod 'RxAlamofire'
-
+pod 'NSObject+Rx'
+pod 'RxDataSources'
+pod 'RxCoreData'
 end
