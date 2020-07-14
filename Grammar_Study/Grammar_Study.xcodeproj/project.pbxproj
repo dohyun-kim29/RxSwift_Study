@@ -22,6 +22,7 @@
 		472107F324BD517B0066E1F0 /* from.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472107F224BD517B0066E1F0 /* from.swift */; };
 		472107F524BD52970066E1F0 /* filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472107F424BD52970066E1F0 /* filter.swift */; };
 		472107F724BD56C40066E1F0 /* flatmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472107F624BD56C40066E1F0 /* flatmap.swift */; };
+		472107F924BDBCB00066E1F0 /* combineLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472107F824BDBCB00066E1F0 /* combineLatest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		472107F224BD517B0066E1F0 /* from.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = from.swift; sourceTree = "<group>"; };
 		472107F424BD52970066E1F0 /* filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filter.swift; sourceTree = "<group>"; };
 		472107F624BD56C40066E1F0 /* flatmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flatmap.swift; sourceTree = "<group>"; };
+		472107F824BDBCB00066E1F0 /* combineLatest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = combineLatest.swift; sourceTree = "<group>"; };
 		5681C3DC1F6C20D96F1637F1 /* Pods-Grammar_Study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grammar_Study.release.xcconfig"; path = "Target Support Files/Pods-Grammar_Study/Pods-Grammar_Study.release.xcconfig"; sourceTree = "<group>"; };
 		AE3C82FC50DA600AA36E0E4C /* Pods-Grammar_Study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grammar_Study.debug.xcconfig"; path = "Target Support Files/Pods-Grammar_Study/Pods-Grammar_Study.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 				472107F224BD517B0066E1F0 /* from.swift */,
 				472107F424BD52970066E1F0 /* filter.swift */,
 				472107F624BD56C40066E1F0 /* flatmap.swift */,
+				472107F824BDBCB00066E1F0 /* combineLatest.swift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472107F924BDBCB00066E1F0 /* combineLatest.swift in Sources */,
 				472107F124BD4FD20066E1F0 /* of.swift in Sources */,
 				472107EA24BC6D850066E1F0 /* Observables.swift in Sources */,
 				472107D724BC6A8F0066E1F0 /* ViewController.swift in Sources */,
