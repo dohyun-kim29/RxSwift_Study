@@ -17,6 +17,9 @@
 		4721084324BDE8F90066E1F0 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4721084224BDE8F90066E1F0 /* Memo.swift */; };
 		4721084524BEBF1C0066E1F0 /* MemoStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4721084424BEBF1C0066E1F0 /* MemoStorageType.swift */; };
 		4721084924BEC07E0066E1F0 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4721084824BEC07E0066E1F0 /* MemoryStorage.swift */; };
+		4721084B24BF0F520066E1F0 /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4721084A24BF0F520066E1F0 /* MemoListViewController.swift */; };
+		4721084D24BF0F830066E1F0 /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4721084C24BF0F830066E1F0 /* MemoDetailViewController.swift */; };
+		4721084F24BF0FA60066E1F0 /* MemoComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4721084E24BF0FA60066E1F0 /* MemoComposeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		4721084224BDE8F90066E1F0 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		4721084424BEBF1C0066E1F0 /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
 		4721084824BEC07E0066E1F0 /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		4721084A24BF0F520066E1F0 /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
+		4721084C24BF0F830066E1F0 /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
+		4721084E24BF0FA60066E1F0 /* MemoComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewController.swift; sourceTree = "<group>"; };
 		71E48C6A05A2E9FFDEB66E39 /* Pods-Rx_Memo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx_Memo.debug.xcconfig"; path = "Target Support Files/Pods-Rx_Memo/Pods-Rx_Memo.debug.xcconfig"; sourceTree = "<group>"; };
 		AE3B406DBE1DC7CA736ADA3A /* Pods_Rx_Memo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rx_Memo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9541B3E617246CE0578E013 /* Pods-Rx_Memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx_Memo.release.xcconfig"; path = "Target Support Files/Pods-Rx_Memo/Pods-Rx_Memo.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +101,9 @@
 			children = (
 				4721082C24BDE5720066E1F0 /* Main.storyboard */,
 				4721083424BDE5750066E1F0 /* LaunchScreen.storyboard */,
+				4721084A24BF0F520066E1F0 /* MemoListViewController.swift */,
+				4721084C24BF0F830066E1F0 /* MemoDetailViewController.swift */,
+				4721084E24BF0FA60066E1F0 /* MemoComposeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -272,10 +281,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4721084924BEC07E0066E1F0 /* MemoryStorage.swift in Sources */,
+				4721084D24BF0F830066E1F0 /* MemoDetailViewController.swift in Sources */,
 				4721082724BDE5720066E1F0 /* AppDelegate.swift in Sources */,
 				4721084524BEBF1C0066E1F0 /* MemoStorageType.swift in Sources */,
 				4721082924BDE5720066E1F0 /* SceneDelegate.swift in Sources */,
 				4721083124BDE5720066E1F0 /* Rx_Memo.xcdatamodeld in Sources */,
+				4721084B24BF0F520066E1F0 /* MemoListViewController.swift in Sources */,
+				4721084F24BF0FA60066E1F0 /* MemoComposeViewController.swift in Sources */,
 				4721084324BDE8F90066E1F0 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

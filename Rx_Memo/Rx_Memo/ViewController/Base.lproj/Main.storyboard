@@ -26,7 +26,7 @@
         <!--메모 목록-->
         <scene sceneID="tO3-zY-dNo">
             <objects>
-                <viewController id="LJl-UY-jCa" sceneMemberID="viewController">
+                <viewController id="LJl-UY-jCa" customClass="MemoListViewController" customModule="Rx_Memo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPb-HR-ID6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
         <!--새 메모-->
         <scene sceneID="VNQ-n5-VpU">
             <objects>
-                <viewController id="y7y-3R-YKf" sceneMemberID="viewController">
+                <viewController id="y7y-3R-YKf" customClass="MemoComposeViewController" customModule="Rx_Memo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BaS-i3-8ot">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,12 +54,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RxS-3n-q7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3325" y="-641"/>
+            <point key="canvasLocation" x="3325" y="-627"/>
         </scene>
-        <!--View Controller-->
+        <!--Memo Detail View Controller-->
         <scene sceneID="E5O-9K-r2M">
             <objects>
-                <viewController storyboardIdentifier="DetailVC" id="p51-tO-x4W" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVC" id="p51-tO-x4W" customClass="MemoDetailViewController" customModule="Rx_Memo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sbC-f6-tDG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,7 @@
                 <navigationController storyboardIdentifier="ListNav" automaticallyAdjustsScrollViewInsets="NO" id="EGq-5V-fo4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="sCD-QF-qRz">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
