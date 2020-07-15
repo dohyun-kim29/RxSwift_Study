@@ -15,6 +15,8 @@
 		4721083324BDE5750066E1F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4721083224BDE5750066E1F0 /* Assets.xcassets */; };
 		4721083624BDE5750066E1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4721083424BDE5750066E1F0 /* LaunchScreen.storyboard */; };
 		4721084324BDE8F90066E1F0 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4721084224BDE8F90066E1F0 /* Memo.swift */; };
+		4721084524BEBF1C0066E1F0 /* MemoStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4721084424BEBF1C0066E1F0 /* MemoStorageType.swift */; };
+		4721084924BEC07E0066E1F0 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4721084824BEC07E0066E1F0 /* MemoryStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		4721083524BDE5750066E1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4721083724BDE5750066E1F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4721084224BDE8F90066E1F0 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		4721084424BEBF1C0066E1F0 /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
+		4721084824BEC07E0066E1F0 /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
 		71E48C6A05A2E9FFDEB66E39 /* Pods-Rx_Memo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx_Memo.debug.xcconfig"; path = "Target Support Files/Pods-Rx_Memo/Pods-Rx_Memo.debug.xcconfig"; sourceTree = "<group>"; };
 		AE3B406DBE1DC7CA736ADA3A /* Pods_Rx_Memo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rx_Memo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9541B3E617246CE0578E013 /* Pods-Rx_Memo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx_Memo.release.xcconfig"; path = "Target Support Files/Pods-Rx_Memo/Pods-Rx_Memo.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +78,6 @@
 				4721082824BDE5720066E1F0 /* SceneDelegate.swift */,
 				4721083224BDE5750066E1F0 /* Assets.xcassets */,
 				4721083724BDE5750066E1F0 /* Info.plist */,
-				4721082F24BDE5720066E1F0 /* Rx_Memo.xcdatamodeld */,
 			);
 			path = Rx_Memo;
 			sourceTree = "<group>";
@@ -106,6 +109,9 @@
 		4721084024BDE7EB0066E1F0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				4721084724BEC05A0066E1F0 /* CoreDataStorage */,
+				4721084624BEC0430066E1F0 /* MemoryStorage */,
+				4721084424BEBF1C0066E1F0 /* MemoStorageType.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -115,6 +121,22 @@
 			children = (
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		4721084624BEC0430066E1F0 /* MemoryStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4721084824BEC07E0066E1F0 /* MemoryStorage.swift */,
+			);
+			path = MemoryStorage;
+			sourceTree = "<group>";
+		};
+		4721084724BEC05A0066E1F0 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4721082F24BDE5720066E1F0 /* Rx_Memo.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
 			sourceTree = "<group>";
 		};
 		92F01106D47BA78360AFDFFC /* Frameworks */ = {
@@ -249,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4721084924BEC07E0066E1F0 /* MemoryStorage.swift in Sources */,
 				4721082724BDE5720066E1F0 /* AppDelegate.swift in Sources */,
+				4721084524BEBF1C0066E1F0 /* MemoStorageType.swift in Sources */,
 				4721082924BDE5720066E1F0 /* SceneDelegate.swift in Sources */,
 				4721083124BDE5720066E1F0 /* Rx_Memo.xcdatamodeld in Sources */,
 				4721084324BDE8F90066E1F0 /* Memo.swift in Sources */,
