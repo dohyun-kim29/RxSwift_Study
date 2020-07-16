@@ -9,6 +9,8 @@
 import UIKit
 
 class MemoDetailViewController: UIViewController, ViewModelBindableType {
+   
+    
     
     var viewModel: MemoDetailViewModel!
 
