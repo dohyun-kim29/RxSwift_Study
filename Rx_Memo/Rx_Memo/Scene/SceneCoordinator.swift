@@ -37,6 +37,7 @@ class SceneCoordinator: SceneCoordinatorType {
                 subject.onError(TransitionError.navigationControllerMissing)
                 break
             }
+            
             nav.pushViewController(target, animated: animated)
             currentVC = target
             

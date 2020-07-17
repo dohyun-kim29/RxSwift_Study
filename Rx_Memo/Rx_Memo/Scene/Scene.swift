@@ -23,7 +23,7 @@ extension Scene {
         case .list(let viewModel):
             guard let nav = storyboard.instantiateViewController(withIdentifier: "ListNav") as?
                 UINavigationController else {
-                fatalError()
+                    fatalError()
             }
             guard var listVC = nav.viewControllers.first as? MemoListViewController
                 else {
@@ -33,15 +33,15 @@ extension Scene {
             listVC.bind(viewModel: viewModel)
             return nav
             
-        case.detail(let viewModel):
+        case .detail(let viewModel):
             guard var detailVC = storyboard.instantiateViewController(withIdentifier: "DetailVC") as?
                 MemoDetailViewController else {
-                fatalError()
+                    fatalError()
             }
             detailVC.bind(viewModel: viewModel)
             return detailVC
             
-        case.compose(let viewModel):
+        case .compose(let viewModel):
             guard let nav = storyboard.instantiateViewController(withIdentifier: "ComposeNav") as? UINavigationController else {
                 fatalError()
             }
