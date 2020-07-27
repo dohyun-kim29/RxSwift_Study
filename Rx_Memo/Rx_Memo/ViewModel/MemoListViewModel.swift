@@ -52,4 +52,6 @@ class MemoListViewModel: CommonViewModel  {
         }
     }()
     
+    
+    
 }
