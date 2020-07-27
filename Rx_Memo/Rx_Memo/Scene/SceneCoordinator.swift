@@ -50,7 +50,7 @@ class SceneCoordinator: SceneCoordinatorType {
                 .subscribe(onNext: { [unowned self] evt in
                     self.currentVC = evt.viewController.sceneViewController
                 })
-                .disposed(by: bag)
+                .disposed(by: bag) 
             
             nav.pushViewController(target, animated: animated)
             currentVC = target.sceneViewController
