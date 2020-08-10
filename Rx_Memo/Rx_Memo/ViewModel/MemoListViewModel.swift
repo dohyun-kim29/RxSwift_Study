@@ -16,6 +16,8 @@ typealias MemoSectionModel =  AnimatableSectionModel<Int, Memo>
 
 class MemoListViewModel: CommonViewModel  {
     
+    
+    
     let dataSource: RxTableViewSectionedAnimatedDataSource<MemoSectionModel> = {
         
         let ds = RxTableViewSectionedAnimatedDataSource<MemoSectionModel> (configureCell: { (dataSource, tableView, indexPath, memo) -> UITableViewCell in
