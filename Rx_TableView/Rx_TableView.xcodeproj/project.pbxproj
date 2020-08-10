@@ -16,6 +16,8 @@
 		4720F87424E179640094BD4A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F87324E179640094BD4A /* MainVC.swift */; };
 		4720F87624E179EC0094BD4A /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F87524E179EC0094BD4A /* DetailVC.swift */; };
 		4720F87824E17A460094BD4A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F87724E17A460094BD4A /* Model.swift */; };
+		4720F87A24E17D830094BD4A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F87924E17D830094BD4A /* MainViewModel.swift */; };
+		4720F87C24E17D8E0094BD4A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4720F87B24E17D8E0094BD4A /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		4720F87324E179640094BD4A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		4720F87524E179EC0094BD4A /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		4720F87724E17A460094BD4A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4720F87924E17D830094BD4A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		4720F87B24E17D8E0094BD4A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		4EE002B70794DF0F309C982B /* Pods-Rx_TableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx_TableView.release.xcconfig"; path = "Target Support Files/Pods-Rx_TableView/Pods-Rx_TableView.release.xcconfig"; sourceTree = "<group>"; };
 		7FCBCFE0FB41303E6D6C10F9 /* Pods-Rx_TableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx_TableView.debug.xcconfig"; path = "Target Support Files/Pods-Rx_TableView/Pods-Rx_TableView.debug.xcconfig"; sourceTree = "<group>"; };
 		FC893FADFBED2A9F897DAD41 /* Pods_Rx_TableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rx_TableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +105,8 @@
 		4720F87024E1789A0094BD4A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4720F87924E17D830094BD4A /* MainViewModel.swift */,
+				4720F87B24E17D8E0094BD4A /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -246,9 +252,11 @@
 			files = (
 				4720F87824E17A460094BD4A /* Model.swift in Sources */,
 				4720F85C24E175850094BD4A /* AppDelegate.swift in Sources */,
+				4720F87C24E17D8E0094BD4A /* DetailViewModel.swift in Sources */,
 				4720F87624E179EC0094BD4A /* DetailVC.swift in Sources */,
 				4720F87424E179640094BD4A /* MainVC.swift in Sources */,
 				4720F85E24E175850094BD4A /* SceneDelegate.swift in Sources */,
+				4720F87A24E17D830094BD4A /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
