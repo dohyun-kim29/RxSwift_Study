@@ -12,6 +12,9 @@ import RxSwift
 
 class DetailVC: UIViewController {
     
+    @IBOutlet weak var foodImgView: UIImageView!
+    @IBOutlet weak var backButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

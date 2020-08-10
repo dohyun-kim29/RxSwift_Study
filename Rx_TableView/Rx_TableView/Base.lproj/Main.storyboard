@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FZr-oD-UDm">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FZr-oD-UDm">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FoodCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodCell" id="7dj-2a-SL9" customClass="FoodCell" customModule="Rx_TableView" customModuleProvider="target">
@@ -44,6 +43,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FZr-oD-UDm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0lF-wl-pH1"/>
+                            <constraint firstItem="FZr-oD-UDm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Ek-Fg-ebO"/>
+                            <constraint firstAttribute="bottom" secondItem="FZr-oD-UDm" secondAttribute="bottom" constant="-8" id="HSg-dm-vjA"/>
+                            <constraint firstItem="FZr-oD-UDm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qyt-hS-27R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -58,13 +63,37 @@
                     <view key="view" contentMode="scaleToFill" id="GdY-Ra-Kth">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7d6-Vt-4I9">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztv-T4-EJK">
+                                <rect key="frame" x="27" y="24" width="25" height="22"/>
+                                <state key="normal" image="backward" catalog="system"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aIG-Rk-Hfg" firstAttribute="bottom" secondItem="7d6-Vt-4I9" secondAttribute="bottom" constant="270" id="FSt-2B-rf0"/>
+                            <constraint firstItem="7d6-Vt-4I9" firstAttribute="leading" secondItem="aIG-Rk-Hfg" secondAttribute="leading" constant="67" id="Fqm-Wy-uEP"/>
+                            <constraint firstItem="Ztv-T4-EJK" firstAttribute="top" secondItem="aIG-Rk-Hfg" secondAttribute="top" constant="24" id="PGs-9R-exQ"/>
+                            <constraint firstItem="Ztv-T4-EJK" firstAttribute="leading" secondItem="aIG-Rk-Hfg" secondAttribute="leading" constant="27" id="R4S-12-Bju"/>
+                            <constraint firstItem="aIG-Rk-Hfg" firstAttribute="trailing" secondItem="7d6-Vt-4I9" secondAttribute="trailing" constant="68" id="l7K-9a-oL0"/>
+                            <constraint firstItem="7d6-Vt-4I9" firstAttribute="top" secondItem="aIG-Rk-Hfg" secondAttribute="top" constant="269" id="twy-jI-ixv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aIG-Rk-Hfg"/>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="Ztv-T4-EJK" id="zXG-5X-t7p"/>
+                        <outlet property="foodImgView" destination="7d6-Vt-4I9" id="JzA-wz-TVN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40n-74-nRN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1218" y="123"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backward" catalog="system" width="128" height="79"/>
+    </resources>
 </document>
