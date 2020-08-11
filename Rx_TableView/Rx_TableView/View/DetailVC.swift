@@ -12,6 +12,8 @@ import RxSwift
 
 class DetailVC: UIViewController {
     
+    let viewModel = DetailViewModel()
+    
     @IBOutlet weak var foodImgView: UIImageView!
     @IBOutlet weak var backButton: UIButton!
     

@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class FoodModel {
     
     let food: Array<String> = ["마라탕", "초콜릿", "마카롱", "아이스크림"]
@@ -21,5 +22,5 @@ class foodImgModel {
     let makaronImg = UIImage(named: "마카롱")
     let iceImg = UIImage(named: "아이스크림")
     
+    
 }
-
